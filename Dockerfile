@@ -38,7 +38,12 @@ RUN python -m venv /venv && \
   chmod -R 755 /data/web/static && \
   chmod -R 755 /data/web/media && \
   chmod -R +x /scripts
-
+  
+# Tambem tem que rodar estes comandos na maquina local.
+# adduser --disabled-password --no-create-home duser && \
+# chown -R duser:duser /data && \
+# chmod -R 777 /data/web/static && \
+# chmod -R 777 data/web/media && \
 # Adiciona a pasta scripts e venv/bin 
 # no $PATH do container.
 ENV PATH="/scripts:/venv/bin:$PATH"
