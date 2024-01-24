@@ -7,6 +7,10 @@ from curriculum_app import views
 urlpatterns = [
     #rota, viem, name
     path('', views.home, name='home'),
+    path('skills', views.skills, name='skills'),
+    path('projects', views.projects, name='projects'),
+    path('about_me', views.about_me, name='about_me'),
+    path('contact', views.contact, name='contact'),
     path('admin/', admin.site.urls),
 ]
 
