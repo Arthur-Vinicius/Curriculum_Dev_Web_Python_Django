@@ -33,10 +33,8 @@ RUN python -m venv /venv && \
   mkdir -p /data/web/static && \
   mkdir -p /data/web/media && \
   chown -R duser:duser /venv && \
-  chown -R duser:duser /data/web/static && \
-  chown -R duser:duser /data/web/media && \
-  chmod -R 755 /data/web/static && \
-  chmod -R 755 /data/web/media && \
+  chown -R duser:duser /data && \
+  chmod -R 777 /data && \
   chmod -R +x /scripts
   
 # Tambem tem que rodar estes comandos na maquina local.

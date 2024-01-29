@@ -134,7 +134,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = DATA_DIR / 'static'
+STATIC_ROOT = DATA_DIR / 'static' 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = DATA_DIR / 'media'
 
@@ -142,3 +142,4 @@ MEDIA_ROOT = DATA_DIR / 'media'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+

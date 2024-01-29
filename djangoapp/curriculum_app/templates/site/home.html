@@ -1,9 +1,11 @@
 {% extends "site/base.html" %}
+{% load static %}
+{% block favicon %} href="{% static 'admin/img/favicon.ico' %}" {% endblock favicon %}
 
 {% block title %} HOME {% endblock title%}
 {% block content %}
-<link rel="icon" href="{% static 'icons/favicon.ico' %}">
 
-<h1></h1>
+
+<h1>hi</h1>
 
 {% endblock %}
